@@ -424,7 +424,7 @@
 
     <repositories>
       <repository>
-        <id>nexus-snapshots/id>
+        <id>nexus-snapshots</id>
         <url>http://localhost:8081/nexus/content/repositories/snapshots</url>
       </repository>
     </repositories>
