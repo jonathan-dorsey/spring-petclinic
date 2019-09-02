@@ -5,7 +5,6 @@ pipeline {
 
   options {
     timeout(time: 5, unit: 'MINUTES')
-    pipelineTriggers([snapshotDependencies(), githubPush()])
   }
 
   stages {
