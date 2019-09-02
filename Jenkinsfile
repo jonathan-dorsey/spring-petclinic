@@ -7,6 +7,10 @@ pipeline {
     timeout(time: 5, unit: 'MINUTES')
   }
 
+ triggers {
+    snapshotDependencies()
+  }
+
   stages {
 
     stage('Build') {
