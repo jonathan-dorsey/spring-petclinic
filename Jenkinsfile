@@ -1,20 +1,12 @@
 #!/bin/env groovy
 
 pipeline {
-  options {
-      timeout(time: 5, unit: 'MINUTES') 
-  }
+  agent any
 
-  properties(
-    [
-      pipelineTriggers(
-        [
-          snapshotDependencies(), 
-          githubPush()
-        ]
-      )
-    ]
-  )
+  options {
+    timeout(time: 5, unit: 'MINUTES')
+    pipelineTriggers([snapshotDependencies(), githubPush()])
+  }
 
   stages {
 
