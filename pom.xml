@@ -170,10 +170,6 @@
             <groupId>org.slf4j</groupId>
             <artifactId>slf4j-api</artifactId>
             <version>${slf4j-api.version}</version>
-            <snapshots>
-                <enabled>true</enabled>
-                <updatePolicy>always</updatePolicy>
-            </snapshots>
         </dependency>
         <dependency>
             <groupId>ch.qos.logback</groupId>
@@ -430,6 +426,10 @@
       <repository>
         <id>nexus-snapshots</id>
         <url>http://localhost:8081/nexus/content/repositories/snapshots</url>
+        <snapshots>
+            <enabled>true</enabled>
+            <updatePolicy>always</updatePolicy>
+        </snapshots>
       </repository>
     </repositories>
 
